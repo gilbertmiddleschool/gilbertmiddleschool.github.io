@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="reset">
+        <button style="background-color: red;" onclick="resetScores()">Reset Scores</button>
+    </div>
+    <div class="scoreboard">
+        <div class="team">
+            <input type="text" id="teamANameInput" placeholder="Enter Team A Name" class="team-name-input">
+            <h2 class="team-name" id="teamANameDisplay">Team A</h2>  
+            <div class="score-container">
+                      <div class="score" id="scoreA">0</div>
+            </div>
+            <button class="arrow" onclick="increaseScore('A', 1)">▲</button>
+            <button class="arrow" onclick="decreaseScore('A', 1)">▼</button>
+        </div>
+        <div class="logo">
+            <img src="lion.png" alt="Logo">
+        </div>
+        <div class="team">
+                <input type="text" id="teamBNameInput" placeholder="Enter Team B Name" class="team-name-input">
+                <h2 class="team-name" id="teamBNameDisplay">Team B</h2>   
+                <div class="score-container">         
+                    <div class="score" id="scoreB">0</div>
+                </div>
+                <button class="arrow" onclick="increaseScore('B', 1)">▲</button>
+                <button class="arrow" onclick="decreaseScore('B', 1)">▼</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
